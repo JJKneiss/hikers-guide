@@ -1,38 +1,115 @@
-.App {
-  text-align: center;
-}
+ul li{font-weight:700;color:var(--white);opacity:50%}
+ul li:hover{opacity:100%}
+ul li a{text-transform:uppercase}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+h1{position:relative;margin:5rem 20rem;float:left;opacity:99%}
+h2{font:program;font-family:program,sans-serif;font-weight:600;font-style:normal;font-size:3.5rem;color:var(--white);text-transform:uppercase;margin:2rem}
+h3{font-size:2.4rem;font-family:program,sans-serif;font-weight:700;color:var(--light-gray1);margin:2rem}
+h4{font-family:program,sans-serif;font-size:1.8rem;font-family:program,sans-serif;font-weight:700;color:var(--light-gray2)}
+h5{font-size:1.4rem;font-family:program,sans-serif;font-weight:700;color:var(--light-gray2)}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+form{margin:0 auto}
+form input, form textarea { margin-top: 2rem; border-radius: 4px;}
+label{float: left;}
+input{float: left; clear: right;}
+button{font-size:1.8rem;color:var(--mid-gray);border:2px solid var(--mid-gray);padding:.75rem 1rem;background:var(--dark-gray1);position:relative;left:50%;transform:translateX(-50%);text-transform:uppercase}
+button:hover{color:var(--white)}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+section > h2 ~ article > div {width: 100%; height: 4rem; background-color: var(--greenblue1);border-radius: 1.5rem 1.5rem 0rem 0rem;}
+article > div > time{position: relative; left: 10rem; top: .25rem; width: 80%; margin: 2rem auto;font-size:3.6rem; color: var(--white);}
 
-.App-link {
-  color: #61dafb;
-}
+section{width:80%; position:relative;margin:2rem auto;clear:both; background-color: var(--dark-gray1);}
+article{float:left;margin:2rem;background-color:var(--dark-gray2);width:calc(100% / 3 - 12rem /3)}
+article h3, article h4{margin:2.5rem;text-transform:uppercase;max-width:max-content}
+article img{width:100%;height:100%}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.blog{width:calc(65% - 2rem);float:left; background-color: rgba(6.67%, 6.67%, 6.67%, .1); border: 1px solid rgba(6.67%, 6.67%, 6.67%, .2)}
+.author-panel{width:calc(35% - 2rem); float:right; margin-top: 2rem; background-color: rgba(6.67%, 6.67%, 6.67%, .1); border: 1px solid rgba(6.67%, 6.67%, 6.67%, .2)}
+.author-panel h3,.author-panel h4,.author-panel p,.author-panel button{margin:2.5rem}
+.author-panel button{
+    margin-top: 1.2rem;
+    margin-left: -13.1rem;
 }
+.read-more a{position:relative;float:left;opacity:100%;font-size:1.4rem;color:var(--white);font-weight:700;text-transform:uppercase;padding:1rem 2rem;margin:2rem 0;width:max-content;background-color:var(--greenblue1);border-bottom:.5rem solid var(--greenblue2)}
+
+.event-post{float:left;background-color:var(--dark-gray2);width:calc(100% / 4 - 10rem /4);margin:1rem}
+.event-post h3,.event-post h4{margin:2.5rem;text-transform:uppercase}
+.event-post img{width:100%;height:100%}
+
+.share-post{float:left;width:100%;margin:2rem 0}
+.icons+p{float:right;max-width:max-content}
+
+.icons li{float:right;transform:translateY(+50%)} 
+
+.contact{width:80%;margin:1rem auto;position:relative}
+.contact h2,.contact p,.contact form{margin:2.5rem}
+
+.form-heading{width:50%;margin:0 auto}
+
+.contact-info ul{height: 10rem; transform: translateY(40%); width:80%; margin:4rem auto; text-align:center;}
+.contact-info li{display:inline; font-size: 2.4rem;}
+.contact-info li::after{content:"";margin: 6rem;border-right: 2px solid var(--greenblue2);}
+.contact-info li:nth-child(3)::after{content: none;border: none;margin: 0;}
+
+div.contact-form,div.contact-form{position: relative; width: calc(100% /2 - 2rem / 2);margin: 2rem 4rem}
+.contact-form{float: left}
+.contact-form h2, .contact-form p, .contact-form form {margin: 2rem auto;}
+.contact-form button{margin-top: 2rem;}
+.contact-map{float: left; margin: 2rem auto; background-color:var(--dark-gray1);}
+#adventure{
+    width: 100%;
+}
+#adventure div div{background-color:var(--greenblue2)}
+#adventure div div+p{
+    height:10rem;background-color:var(--dark-gray1);font-size:2.4rem;margin:0 auto;padding:0
+}
+#adventure div div+p>a{
+    margin:0 auto;color:var(--greenblue2)
+}
+#adventure div div+p>a+a{
+    text-indent:-9999px;margin-left:1rem;height:2.7rem;width:2.7rem;overflow:hidden;background:url(../images/arrow.png) no-repeat
+}
+#content{position:relative;height:36rem;width:100%;background:url(../images/climbers.png) no-repeat;background-size:contain;background-position:right;border-bottom:2rem solid var(--dark-gray2)}
+#content h2{padding-top:10rem}
+#content h2, #content blockquote{padding-left:16rem}
+#content blockquote{padding-top:2rem;color:var(--white);font-weight:700;font-style:italic;font-size:2.4rem}
+#content a{visibility:hidden}
+#content a::after{visibility:visible;content:"";float:left;height:3rem;width:3rem;margin-left:10rem;background:url(../images/twitter.png) no-repeat}
+
+blockquote ~ p{float:left;transform:translateY(-50%);color:var(--white);font-weight:400; margin-top: 4rem; margin-left:12rem;}
+
+footer{background-color:var(--dark-gray2);width:100%}
+footer time{margin-left:2rem}
+footer section {width:80%;margin:0 auto; clear: none;}
+footer section section {float:left; background-color:var(--dark-gray2);position:relative;width:calc(100% / 3 - 10rem / 3)}
+footer section section h2{margin:2rem;border-bottom:1px solid var(--mid-gray); position: relative;font-size:2.4rem;text-transform:none;margin-bottom:4rem}
+footer section section h3{font-size:1.8rem; position: relative;}
+footer section section p{font-size:1.4rem; position: relative;}
+footer section section ul li{clear:both;opacity:100%; position: relative;}
+li time{float:left;padding:3.2rem .5rem;width:4.5rem}
+
+footer section, footer section section h2, footer section section, .footer-float{ position: relative;}
+
+.footer-float{float:left;}
+.footer-float p,.footer-float h3,.footer-float address{width:max-content;color:var(--light-gray2)}
+.footer-float h3+p,p+div.footer-float address{font-weight:400}
+.footer-float h3,p+div.footer-float p{color:var(--white);font-weight:700;font-size:1.8rem;opacity:100%}
+.footer-float p,.footer-float address{margin-left:2rem;font-weight:700}
+.footer-float h3,.footer-float p{margin-left:2rem;margin-top:1.6rem}
+
+#footer-bot{height:6.4rem;width:100%;background-color:var(--black);background-color:#000;clear:left}
+
+#legal{float:left;margin:2.5rem 10rem}
+#legal li,#social-media li{text-transform:uppercase;display:inline}
+#legal li:nth-child(4)::after{content:"";border-right:#000}
+#legal li::after{content:"";margin:1rem;border-right:2px solid var(--mid-gray)}
+#legal li a{color:var(--greenblue2)}
+
+#social-media{float:right;margin:1.5rem 10rem}
+
+.fb,.ig,.yt,.twit,.goog{text-indent:-9999px;margin:0 1rem;height:3rem;width:3rem;float:right}
+.twit{background:url(../images/twitter.png)no-repeat}
+.fb{background:url(../images/facebook.png)no-repeat}
+.yt{background:url(../images/youtube.png)no-repeat}
+.goog{background:url(../images/google.png)no-repeat}
+.ig{background:url(../images/instagram.png)no-repeat}
