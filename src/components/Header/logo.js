@@ -5,7 +5,7 @@ import LogoImage from '../../images/hikersGuide.png';
 
 const Logo = (props, children) => {
     return (
-        <NavLink to="logo"><img src={LogoImage} /></NavLink>
+        <NavLink to="/"><img src={LogoImage} alt="logo" /></NavLink>
     );
 }
 
